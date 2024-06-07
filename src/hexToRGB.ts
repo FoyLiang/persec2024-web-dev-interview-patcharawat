@@ -20,7 +20,3 @@ export function hexToRGB(hex: string): IRgbColor | Error {
   const bHex = parseInt(hex.substring(4, 6), 16);
   return { r: rHex, g: gHex, b: bHex };
 }
-
-const hexValue = '#fbafff';
-const rgbValue = hexToRGB(hexValue);
-console.log(rgbValue);
